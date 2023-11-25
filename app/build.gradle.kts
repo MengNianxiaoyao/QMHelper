@@ -55,7 +55,7 @@ android {
         minSdk = 23
         targetSdk = 33
         versionCode = gitCommitCount
-        versionName = appVerName
+        versionName = "1.1.5"
 
         if (buildWithGitSuffix.toBoolean())
             versionNameSuffix = ".r$gitCommitCount.$gitCommitHash"
