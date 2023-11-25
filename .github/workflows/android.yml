@@ -34,14 +34,14 @@ jobs:
           key: ${{ runner.os }}-${{ github.sha }}
           restore-keys: ${{ runner.os }}
 
-      - name: Generate signing config
-        run: |
-          key_base64="${{ secrets.SIGNING_KEY }}"
-          echo -n "$key_base64" | base64 -d > signing.jks
-          echo "releaseStoreFile=signing.jks" >> gradle.properties
-          echo "releaseStorePassword=android" >> gradle.properties
-          echo "releaseKeyAlias=androiddebugkey" >> gradle.properties
-          echo "releaseKeyPassword=android" >> gradle.properties
+#      - name: Generate signing config
+#        run: |
+#          key_base64="${{ secrets.SIGNING_KEY }}"
+#          echo -n "$key_base64" | base64 -d > signing.jks
+#          echo "releaseStoreFile=signing.jks" >> gradle.properties
+#          echo "releaseStorePassword=android" >> gradle.properties
+#          echo "releaseKeyAlias=androiddebugkey" >> gradle.properties
+#          echo "releaseKeyPassword=android" >> gradle.properties
 
       - name: Build with Gradle
         run: |
