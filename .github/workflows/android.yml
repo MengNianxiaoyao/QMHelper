@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    name: Build
+    name: Build Ci
     runs-on: ubuntu-latest
     env:
       CCACHE_DIR: ${{ github.workspace }}/.ccache
