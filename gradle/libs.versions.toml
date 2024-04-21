@@ -15,4 +15,4 @@ dexmaker = { module = "com.linkedin.dexmaker:dexmaker", version = "2.28.3" }
 kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
 kotlin-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutine" }
 kotlin-coroutines-jdk = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-jdk8", version.ref = "coroutine" }
-androidx-annotation = { module = "androidx.annotation:annotation", version = "1.6.0" }
+androidx-annotation = { module = "androidx.annotation:annotation", version = "1.7.1" }
